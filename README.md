@@ -1,76 +1,195 @@
 ```sh
-# Welcome to your Lovable project
 
-## Project info
+# 🌾 Early Detection of Wheat Diseases
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+An AI-powered web application designed to detect wheat diseases at an early stage using Machine Learning and Deep Learning techniques. The system helps farmers reduce crop loss by providing instant diagnosis, weather insights, and intelligent recommendations.
 
-## How can I edit this code?
+🔗 **Live Demo:** https://agrilens-beta.vercel.app/
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 📌 Project Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Wheat is a crucial staple crop, but its yield is heavily affected by diseases like rust, blight, and mildew. Traditional detection methods are slow and often ineffective.
 
-Changes made via Lovable will be committed automatically to this repo.
+This project leverages **AI, ML, and DL** to provide:
 
-**Use your preferred IDE**
+* Early disease detection
+* Real-time monitoring
+* Smart recommendations
+* Weather-based insights
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+##  Features
 
-Follow these steps:
+###  1. AI-Based Disease Detection
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* Upload wheat leaf images
+* ML/DL model predicts disease
+* Displays:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+  * Disease name
+  * Confidence score
+  * Suggested remedies
 
-# Step 3: Install the necessary dependencies.
-npm i
+###  2. Auto-Updating Dashboard
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+* Real-time updates after each scan
+* Tracks:
+
+  * Disease history
+  * Field health
+  * Trends and analytics
+
+###  3. Weather Information & Forecast
+
+* Integrated with OpenWeather API
+* Provides:
+
+  * Current weather conditions
+  * Forecast data
+  * Disease risk prediction based on climate
+
+###  4. Intelligent Chatbot
+
+* Powered by Gemini API
+* Helps users:
+
+  * Understand diseases
+  * Get treatment suggestions
+  * Ask agriculture-related queries
+
+---
+
+##  Tech Stack
+
+###  Frontend
+
+* React.js
+* Figma (UI/UX Design)
+
+###  Backend
+
+* Flask (Python)
+* REST APIs
+
+###  AI/ML/DL
+
+* Python
+* Jupyter Notebook
+* Deep Learning models (MobileNet / EfficientNet)
+
+###  Database
+
+* PostgreSQL (AWS RDS)
+
+###  Cloud & Deployment
+
+* AWS EC2
+* AWS RDS
+
+###  APIs
+
+* OpenWeather API
+* Gemini API
+
+###  Tools
+
+* Git & GitHub
+* VS Code
+
+---
+
+##  System Architecture
+
+```
+User → React Frontend → Flask Backend → ML/DL Model
+                                  ↓
+                         PostgreSQL (AWS RDS)
+                                  ↓
+                       APIs (Weather + Gemini)
+                                  ↓
+                            Dashboard UI
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+##  Project Structure
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-  ```
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 ```
-## How can I deploy this project?
+Early-Detection-of-Wheat-Diseases/
+│
+├── public/          
+├── backend/           # Flask APIs
+    ├── database/          # DB schema & configs
+├── src/             # Frontend
+├── assets/            # Images & UI assets
+└── README.md
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+##  Installation & Setup
 
-Yes, you can!
+### 1️⃣ Clone the Repository
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```bash
+git clone https://github.com/Vani6125/Wheat_Disease_Detection.git
+cd Early-Detection-of-Wheat-Diseases
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### 2️⃣ Setup Backend (Flask)
+
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
+
+### 3️⃣ Setup Frontend (React)
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+---
+
+## 🌍 Future Enhancements
+
+* 📱 Mobile App Integration
+* 📡 Drone-based monitoring
+* 🧠 Improved model accuracy with larger datasets
+* 🌐 Multi-language support for farmers
+* 🔔 SMS/WhatsApp alert system
+
+---
+
+##  Contributing
+
+Contributions are welcome!
+Feel free to fork the repo and submit a pull request.
+
+---
+
+##  License
+
+This project is licensed under the MIT License.
+
+---
+
+##  Authors
+
+* Manukonda Vani
+* Kandula Prasannatha
+* Sanku Vasuki Anila
+* Thota Tejaswini
+
+
+##  Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+
 ```
